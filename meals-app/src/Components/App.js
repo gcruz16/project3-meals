@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 //import "../App.css";
-import Meals from "./Component/Meals";
+import Meals from "../Meals";
 import axios from "axios";
-import Meals from "./Components/Meals";
 
 const mealsURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
@@ -23,7 +22,11 @@ class App extends Component {
   };
 
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <h1>Meals App</h1>
+      </div>
+    );
   }
 }
 
