@@ -24,7 +24,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div>Meals App</div>
-				<Meals mealsCategories={this.state.mealsList} />
+				<Meals mealsCategories={this.state.mealsCategories} />
 			</div>
 		);
 	}
