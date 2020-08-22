@@ -7,7 +7,10 @@ function MealCategories(props) {
   });
   return (
     <div>
-      <select>{optionCategory}</select>
+      <div>
+        <p>Meal Category</p>
+        <select onChange={props.getCategoryMeals}>{optionCategory}</select>
+      </div>
     </div>
   );
 }
