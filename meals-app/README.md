@@ -2,7 +2,7 @@
 
 ## Application Description
 
-This application displays a database of meals and recipes. It enables users to select meals from the database by categories or by specific search criteria.
+This application displays a database of meals and recipes. It enables users to select meals from the database by category and then by selecting a specific meal.
 
 ### User Stories
 

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import MealCategories from "../MealCategories";
 import axios from "axios";
 import CategoryMeals from "../CategoryMeals";
+import MealDetails from "../MealDetails";
 
 const categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
@@ -12,6 +13,7 @@ class App extends Component {
     this.state = {
       mealCategories: [],
       categoryMeals: [],
+      mealDetails: [],
     };
   }
   //   getMeals = async (event) => {
@@ -32,6 +34,15 @@ class App extends Component {
     });
   };
 
+  getMealDetails = async (event) => {
+    let meal = event.target.value;
+    const mealURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
+    let response = await axios.get(mealURL);
+    this.setState({
+      mealDetails: response.data.meals,
+    });
+  };
+
   render() {
     console.log(this.state.mealCategories);
     return (
@@ -42,7 +53,11 @@ class App extends Component {
           categoryMeals={this.state.categoryMeals}
           getCategoryMeals={this.getCategoryMeals}
         />
-        <CategoryMeals categoryMeals={this.state.categoryMeals} />
+        <CategoryMeals
+          categoryMeals={this.state.categoryMeals}
+          getMealDetails={this.getMealDetails}
+        />
+        <MealDetails mealDetails={this.state.mealDetails} />
       </div>
     );
   }
