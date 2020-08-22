@@ -19,7 +19,6 @@ class App extends Component {
 			mealsCategories: response.data,
 		});
 	};
-
 	render() {
 		return (
 			<div className="App">
