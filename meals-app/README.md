@@ -1,3 +1,29 @@
+# Meals and Recipe Application
+
+## Application Description
+
+This application displays a database of meals and recipes. It enables users to select meals from the database by categories or by specific search criteria.
+
+### User Stories
+
+1.  Users must be able to use this application to find recipes.
+2.  Users need to be able to filter by category.
+3.  Users need a dropdown window that contains categories to select from.
+4.  After retrieving the data, users need to see the name and image of the meal.
+5.  Users need to be able to see the list of ingredients and instructions when they click on the meal.
+
+**Wireframe Images Used In This Project**
+![](Project3wireframeimage1.png)
+
+### Technical Requirements
+
+1. This application uses html and extensive CSS code to create the views for the user.
+2. It uses Axios to retrieve the API meal data to the program.
+3. It uses Javascript, XML and React to perform all the database functions.
+4. It is deployed on Heroku.
+
+\*\*The application is hosted on https:// and saved to https://github.com/gcruz16/project3-meals
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
