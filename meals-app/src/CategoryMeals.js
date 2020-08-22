@@ -12,9 +12,8 @@ function CategoryMeals(props) {
     );
   });
   return (
-    <div>
-      <p>Category Meals</p>
-      {mealsArray}
+    <div id="catMeals">
+      <div id="catMealHeading">{mealsArray}</div>
     </div>
   );
 }
