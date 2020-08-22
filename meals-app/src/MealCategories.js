@@ -1,5 +1,4 @@
 import React from "react";
-import DropdownList from "react-widgets/lib/DropdownList";
 
 function MealCategories(props) {
   const optionCategory = props.mealCategories.map((category, index) => {

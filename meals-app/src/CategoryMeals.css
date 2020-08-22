@@ -1,0 +1,19 @@
+#mealDiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+}
+
+#mealImage {
+  height: 100px;
+  width: 100px;
+}
+
+#mealName {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+}

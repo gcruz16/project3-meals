@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import "../App.css";
 import MealCategories from "../MealCategories";
 import axios from "axios";
-import { DropdownList } from "react-widgets";
+import CategoryMeals from "../CategoryMeals";
 
 const categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
@@ -28,7 +28,7 @@ class App extends Component {
     const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${changeCategory}`;
     let response = await axios.get(mealsURL);
     this.setState({
-      categoryMeals: response.data,
+      categoryMeals: response.data.meals,
     });
   };
 
@@ -42,6 +42,7 @@ class App extends Component {
           categoryMeals={this.state.categoryMeals}
           getCategoryMeals={this.getCategoryMeals}
         />
+        <CategoryMeals categoryMeals={this.state.categoryMeals} />
       </div>
     );
   }
