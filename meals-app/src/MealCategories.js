@@ -1,9 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function MealCategories(props) {
 	console.log(props);
 	const optionCategory = props.mealCategories.map((category, index) => {
 		return <option key={index + 1}>{category.strCategory}</option>;
+	});
+
+	const mealsArray = props.mealDetails.map((meal, index) => {
+		return (
+			<div>
+				<div id="mealDiv">
+					<Link to={`/meals/${meal.strMeal}`}>
+						<img
+							alt=""
+							onClick={props.getMealDetails}
+							id="mealImage"
+							src={meal.strMealThumb}
+						/>
+					</Link>
+					<p id="mealName">{meal.strMeal}</p>
+				</div>
+			</div>
+		);
 	});
 	return (
 		<div>
@@ -11,6 +30,7 @@ function MealCategories(props) {
 				<p>Meal Category</p>
 				<select onChange={props.getCategoryMeals}>{optionCategory}</select>
 			</div>
+			{mealsArray}
 		</div>
 	);
 }

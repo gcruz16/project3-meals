@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import MealCategories from "../MealCategories";
-import CategoryMeals from "../CategoryMeals";
 import MealDetails from "../MealDetails";
 import axios from "axios";
 //import "../App.css";
@@ -57,18 +56,7 @@ class App extends Component {
 							render={(routerProps) => (
 								<MealCategories
 									{...this.state}
-									setMealCategories={this.setMealCategories}
-									{...routerProps}
-								/>
-							)}
-						/>
-						<Route
-							path="/mealCategories"
-							render={(routerProps) => (
-								<CategoryMeals
-									{...this.state}
-									setCategoryMeals={this.setCategoryMeals}
-									setgetMealDetails={this.getMealDetails}
+									getCategoryMeals={this.getMealDetails}
 									{...routerProps}
 								/>
 							)}
@@ -76,18 +64,9 @@ class App extends Component {
 						<Route
 							path="/meals/:strMeal"
 							render={(routerProps) => (
-								<MealDetails
-									{...this.state}
-									setMealDetails={this.setMealDetails}
-									{...routerProps}
-								/>
+								<MealDetails {...this.state} {...routerProps} />
 							)}
 						/>
-						{/* <CategoryMeals
-							categoryMeals={this.state.categoryMeals}
-							getMealDetails={this.getMealDetails}
-						/>
-						<MealDetails mealDetails={this.state.mealDetails} /> */}
 					</Switch>
 				</main>
 			</div>
