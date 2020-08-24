@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import MealCategories from "../MealCategories";
 import CategoryMeals from "../CategoryMeals";
 import MealDetails from "../MealDetails";
@@ -63,12 +63,22 @@ class App extends Component {
 							)}
 						/>
 						<Route
-							path="/a"
+							path="/mealCategories"
 							render={(routerProps) => (
 								<CategoryMeals
 									{...this.state}
-									setcategoryMeals={this.setcategoryMeals}
+									setCategoryMeals={this.setCategoryMeals}
 									setgetMealDetails={this.getMealDetails}
+									{...routerProps}
+								/>
+							)}
+						/>
+						<Route
+							path="/meals/:strMeal"
+							render={(routerProps) => (
+								<MealDetails
+									{...this.state}
+									setMealDetails={this.setMealDetails}
 									{...routerProps}
 								/>
 							)}
