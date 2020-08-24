@@ -1,29 +1,85 @@
 import React, { Component } from "react";
+import { Route, Link, Switch } from "react-router-dom";
+import MealCategories from "../MealCategories";
+import CategoryMeals from "../CategoryMeals";
+import MealDetails from "../MealDetails";
 import axios from "axios";
-import Meals from "./Meals.js";
+//import "../App.css";
 
-const mealsURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
+const categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			mealsCategories: [],
+			mealCategories: [],
+			categoryMeals: [],
+			mealDetails: [],
 		};
 	}
 	//   getMeals = async (event) => {
 	componentDidMount = async () => {
-		let response = await axios.get(mealsURL);
+		let response = await axios.get(categoryURL);
 
 		this.setState({
-			mealsCategories: response.data,
+			mealCategories: response.data.categories,
 		});
 	};
+
+	getCategoryMeals = async (event) => {
+		let changeCategory = event.target.value;
+		const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${changeCategory}`;
+		let response = await axios.get(mealsURL);
+		this.setState({
+			categoryMeals: response.data.meals,
+		});
+	};
+
+	getMealDetails = async (event) => {
+		let meal = event.target.value;
+		const mealURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
+		let response = await axios.get(mealURL);
+		this.setState({
+			mealDetails: response.data.meals,
+		});
+	};
+
 	render() {
+		console.log(this.state.mealCategories);
 		return (
 			<div className="App">
-				<div>Meals App</div>
-				<Meals mealsCategories={this.state.mealsCategories} />
+				<h1>Meals App</h1>
+				<main>
+					<Switch>
+						<Route
+							exact
+							path="/"
+							render={(routerProps) => (
+								<MealCategories
+									{...this.state}
+									setMealCategories={this.setMealCategories}
+									{...routerProps}
+								/>
+							)}
+						/>
+						<Route
+							path="/a"
+							render={(routerProps) => (
+								<CategoryMeals
+									{...this.state}
+									setcategoryMeals={this.setcategoryMeals}
+									setgetMealDetails={this.getMealDetails}
+									{...routerProps}
+								/>
+							)}
+						/>
+						{/* <CategoryMeals
+							categoryMeals={this.state.categoryMeals}
+							getMealDetails={this.getMealDetails}
+						/>
+						<MealDetails mealDetails={this.state.mealDetails} /> */}
+					</Switch>
+				</main>
 			</div>
 		);
 	}

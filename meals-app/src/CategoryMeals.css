@@ -1,0 +1,39 @@
+#mealDiv {
+  border: 2px solid lightgrey;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#mealImage {
+  height: 125px;
+  width: 125px;
+  align-items: center;
+}
+
+#mealName {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  width: 125px;
+}
+
+#catMeals {
+  display: grid;
+  place-items: center;
+}
+#catMealHeading {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  width: 900px;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
