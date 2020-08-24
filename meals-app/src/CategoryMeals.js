@@ -8,14 +8,12 @@ function CategoryMeals(props) {
 		return (
 			<div>
 				<div id="mealDiv">
-					{/* <Link to={`/meals/${meal.strMeal}`}> */}
 					<img
 						alt=""
 						onClick={props.getMealDetails}
 						id="mealImage"
 						src={meal.strMealThumb}
 					/>
-					{/* </Link> */}
 					<p id="mealName">{meal.strMeal}</p>
 				</div>
 			</div>

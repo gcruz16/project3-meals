@@ -28,16 +28,15 @@ class App extends Component {
 	getCategoryMeals = async (event) => {
 		let changeCategory = event.target.value;
 		const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${changeCategory}`;
-		console.log(mealsURL);
 		let response = await axios.get(mealsURL);
 		this.setState({
 			categoryMeals: response.data.meals,
 		});
-		console.log(this.state.categoryMeals);
 	};
 
 	getMealDetails = async (event) => {
-		let meal = event.target.value;
+		console.log("getMealDetails--" + event.target);
+		let meal = "Lasagne";
 		const mealURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
 		let response = await axios.get(mealURL);
 		this.setState({

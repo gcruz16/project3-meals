@@ -10,7 +10,7 @@ function MealCategories(props) {
 
 	const mealsArray = props.categoryMeals.map((meal, index) => {
 		return (
-			<div>
+			<div key={index}>
 				<div id="mealDiv">
 					<Link to={`/meals/${meal.strMeal}`}>
 						<img
