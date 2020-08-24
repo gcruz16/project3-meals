@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MealCategories.css";
 
 function MealCategories(props) {
 	console.log(props);
@@ -30,7 +31,9 @@ function MealCategories(props) {
 				<p>Meal Category</p>
 				<select onChange={props.getCategoryMeals}>{optionCategory}</select>
 			</div>
-			{mealsArray}
+			<div id="catMeals">
+				<div id="catMealHeading">{mealsArray}</div>
+			</div>
 		</div>
 	);
 }
