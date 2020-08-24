@@ -28,10 +28,12 @@ class App extends Component {
 	getCategoryMeals = async (event) => {
 		let changeCategory = event.target.value;
 		const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${changeCategory}`;
+		console.log(mealsURL);
 		let response = await axios.get(mealsURL);
 		this.setState({
 			categoryMeals: response.data.meals,
 		});
+		console.log(this.state.categoryMeals);
 	};
 
 	getMealDetails = async (event) => {
@@ -44,7 +46,6 @@ class App extends Component {
 	};
 
 	render() {
-		console.log(this.state.mealCategories);
 		return (
 			<div className="App">
 				<h1>Meals App</h1>
@@ -56,7 +57,8 @@ class App extends Component {
 							render={(routerProps) => (
 								<MealCategories
 									{...this.state}
-									getCategoryMeals={this.getMealDetails}
+									getCategoryMeals={this.getCategoryMeals}
+									getMealDetails={this.getMealDetails}
 									{...routerProps}
 								/>
 							)}

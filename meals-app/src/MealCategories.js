@@ -8,7 +8,7 @@ function MealCategories(props) {
 		return <option key={index + 1}>{category.strCategory}</option>;
 	});
 
-	const mealsArray = props.mealDetails.map((meal, index) => {
+	const mealsArray = props.categoryMeals.map((meal, index) => {
 		return (
 			<div>
 				<div id="mealDiv">
