@@ -4,25 +4,29 @@
 
 #pageHeading {
   display: flex;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   height: 200px;
   flex-flow: row nowrap;
   justify-content: space-around;
+  background-color: lightgreen;
 }
 
 #titleDiv {
   display: flex;
-  width: 50%;
-  border: 2px solid green;
+  width: 40%;
+  margin-left: 130px;
+  flex-flow: nowrap;
+  /* border: 2px solid green; */
   justify-content: center;
   background-color: lightgreen;
 }
 
 #pageImage {
   display: flex;
-  width: 300px;
-  height: 175px;
+  width: 375px;
+  margin-right: 90px;
+  height: 200px;
   background-color: lightgreen;
   border-radius: 100px/20px;
 }
@@ -30,16 +34,18 @@
 #imageDiv {
   display: flex;
   width: 50%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   justify-content: center;
   background-color: lightgreen;
 }
 
 #pageTitle {
   display: flex;
-  width: 300px;
-  height: 75px;
-  font-size: 50px;
+  width: 850px;
+  /* background-color: mediumspringgreen; */
+  height: 70px;
+  font-size: 60px;
+  flex-flow: nowrap;
 }
 
 .App-logo {
@@ -62,6 +68,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#mealDetails {
+  margin-left: 10%;
+  border: brown solid 3px;
+  justify-content: center;
+  width: 80%;
 }
 
 .App-link {

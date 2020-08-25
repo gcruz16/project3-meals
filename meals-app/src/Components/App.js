@@ -50,7 +50,7 @@ class App extends Component {
       <div className="App">
         <div id="pageHeading">
           <div id="titleDiv">
-            <h1 id="pageTitle">The Meal DataBase</h1>
+            <h1 id="pageTitle">The Meal Database</h1>
           </div>
           <div id="imageDiv">
             <img
@@ -73,12 +73,14 @@ class App extends Component {
                 />
               )}
             />
-            <Route
-              path="/meals/:strMeal"
-              render={(routerProps) => (
-                <MealDetails {...this.state} {...routerProps} />
-              )}
-            />
+            <div id="mealDetails">
+              <Route
+                path="/meals/:strMeal"
+                render={(routerProps) => (
+                  <MealDetails {...this.state} {...routerProps} />
+                )}
+              />
+            </div>
           </Switch>
         </main>
       </div>
