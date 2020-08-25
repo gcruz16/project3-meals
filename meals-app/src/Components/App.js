@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import MealCategories from "../MealCategories";
 import MealDetails from "../MealDetails";
 import axios from "axios";
-//import "../App.css";
+import "./App.css";
 
 const categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
@@ -35,8 +35,7 @@ class App extends Component {
 	};
 
 	getMealDetails = async (event) => {
-		console.log("getMealDetails--" + event.target);
-		let meal = "Lasagne";
+		let meal = event.target.getAttribute("alt");
 		const mealURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
 		let response = await axios.get(mealURL);
 		this.setState({
@@ -47,7 +46,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<h1>Meals App</h1>
+				<h1>The Meal DB</h1>
 				<main>
 					<Switch>
 						<Route

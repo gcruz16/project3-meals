@@ -4,6 +4,7 @@ import "./MealCategories.css";
 
 function MealCategories(props) {
 	console.log(props);
+
 	const optionCategory = props.mealCategories.map((category, index) => {
 		return <option key={index + 1}>{category.strCategory}</option>;
 	});
@@ -14,9 +15,9 @@ function MealCategories(props) {
 				<div id="mealDiv">
 					<Link to={`/meals/${meal.strMeal}`}>
 						<img
-							alt=""
-							onClick={props.getMealDetails}
 							id="mealImage"
+							alt={meal.strMeal}
+							onClick={props.getMealDetails}
 							src={meal.strMealThumb}
 						/>
 					</Link>
