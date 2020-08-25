@@ -1,31 +1,31 @@
 #imgMeal {
-	display: flex;
-	width: 200px;
-	height: 200px;
+  display: flex;
+  width: 200px;
+  height: 200px;
 }
 #strMeal {
-	display: flex;
-	width: 100%;
-	font-size: 45px;
-	flex-flow: row nowrap;
-	justify-items: center;
+  display: flex;
+  width: 100%;
+  font-size: 45px;
+  flex-flow: row nowrap;
+  justify-items: center;
 }
 
 #category {
-	display: flex;
-	font-size: 20px;
-	width: 50%;
-	flex-flow: row wrap;
+  display: flex;
+  font-size: 20px;
+  width: 50%;
+  flex-flow: row wrap;
 }
 #area {
-	display: flex;
-	font-size: 20px;
-	width: 50%;
-	flex-flow: row wrap;
+  display: flex;
+  font-size: 20px;
+  width: 50%;
+  flex-flow: row wrap;
 }
 #instructions {
-	display: flex;
-	font-size: 20px;
-	width: 100%;
-	flex-flow: row nowrap;
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  flex-flow: row nowrap;
 }

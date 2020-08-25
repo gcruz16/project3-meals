@@ -48,7 +48,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>The Meal DB</h1>
+        <div id="pageHeading">
+          <div id="titleDiv">
+            <h1 id="pageTitle">The Meal DataBase</h1>
+          </div>
+          <div id="imageDiv">
+            <img
+              id="pageImage"
+              src="https://media.self.com/photos/5ec2fa11589de8da3fd4ccbd/master/w_1280,h_960,c_limit/veestro two final.png"
+            />
+          </div>
+        </div>
         <main>
           <Switch>
             <Route

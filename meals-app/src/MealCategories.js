@@ -28,12 +28,20 @@ function MealCategories(props) {
   });
   return (
     <div>
-      <div>
-        <p>Select a Meal Category</p>
-        <select onChange={props.getCategoryMeals}>{optionCategory}</select>
+      <div id="categoryHeading">
+        <div id="divSelectCategory">
+          <p id="selectCategory"> Select a Meal Category:</p>
+        </div>
+        <div id="divCategory">
+          <select id="categoryDropdown" onChange={props.getCategoryMeals}>
+            {optionCategory}
+          </select>
+        </div>
       </div>
-      <div id="catMeals">
-        <div id="catMealHeading">{mealsArray}</div>
+      <div id="main">
+        <div id="catMeals">
+          <div id="catMealHeading">{mealsArray}</div>
+        </div>
       </div>
     </div>
   );
