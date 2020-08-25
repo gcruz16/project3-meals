@@ -1,93 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Chela+One&family=Chewy&display=swap");
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 #pageHeading {
-  display: flex;
-  /* border: 2px solid blue; */
-  width: 100%;
-  height: 200px;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  background-color: lightgreen;
+	/* border: 2px solid blue; */
+	display: flex;
+	width: 100%;
+	height: 200px;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	background-color: black;
+	color: #d2f6cb;
 }
 
 #titleDiv {
-  display: flex;
-  width: 40%;
-  margin-left: 130px;
-  flex-flow: nowrap;
-  /* border: 2px solid green; */
-  justify-content: center;
-  background-color: lightgreen;
+	/* border: 2px solid green; */
+	display: flex;
+	width: 40%;
+	margin-left: 130px;
+	flex-flow: nowrap;
+	justify-content: center;
+	background-color: black;
+	font-family: "Aclonica";
 }
 
 #pageImage {
-  display: flex;
-  width: 375px;
-  margin-right: 90px;
-  height: 200px;
-  background-color: lightgreen;
-  border-radius: 100px/20px;
+	display: flex;
+	width: 375px;
+	margin-right: 90px;
+	height: 200px;
+	border-radius: 90px/25px;
 }
 
 #imageDiv {
-  display: flex;
-  width: 50%;
-  /* border: 2px solid red; */
-  justify-content: center;
-  background-color: lightgreen;
+	/* border: 2px solid red; */
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	background-color: black;
 }
 
 #pageTitle {
-  display: flex;
-  width: 850px;
-  /* background-color: mediumspringgreen; */
-  height: 70px;
-  font-size: 60px;
-  flex-flow: nowrap;
+	/* background-color: mediumspringgreen; */
+	display: flex;
+	width: 850px;
+	height: 70px;
+	font-size: 90px;
+	flex-flow: nowrap;
+	font-family: "Chela One";
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 30s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 #mealDetails {
-  margin-left: 10%;
-  border: brown solid 3px;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-  width: 80%;
+	/* border: brown solid 3px; */
+	margin-left: 10%;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+	width: 80%;
+	font-family: "Chela One";
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

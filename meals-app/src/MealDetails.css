@@ -1,65 +1,60 @@
 #imgMeal {
-  display: flex;
-  width: 35%;
-  height: 200px;
-  /* width: 300px;
-  height: 200px; */
-  justify-self: center;
-  margin-left: 30%;
-
-  /* justify-items: center; */
-  /* justify-content: center; */
-  justify-content: space-evenly;
+	display: flex;
+	width: 400px;
+	height: 300px;
+	justify-self: center;
+	margin-left: 30%;
+	justify-content: space-evenly;
 }
 
 #strMeal {
-  display: flex;
-  width: 100%;
-  font-size: 45px;
-  font-weight: 500;
-  flex-flow: row nowrap;
-  justify-items: center;
-  justify-content: center;
+	display: flex;
+	width: 100%;
+	font-size: 45px;
+	font-weight: 500;
+	flex-flow: row nowrap;
+	justify-items: center;
+	justify-content: center;
 }
 
 #category {
-  display: flex;
-  font-size: 20px;
-  /* background-color: yellow; */
-  /* width: 50%; */
-  flex-flow: row wrap;
-  justify-content: center;
-  /* justify-items: center; */
+	display: flex;
+	font-size: 20px;
+	/* background-color: yellow; */
+	/* width: 50%; */
+	flex-flow: row wrap;
+	justify-content: center;
+	/* justify-items: center; */
 }
 
 #categoryLabel {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 #area {
-  display: flex;
-  font-size: 20px;
+	display: flex;
+	font-size: 20px;
 
-  /* width: 50%; */
-  flex-flow: row wrap;
-  justify-content: center;
+	/* width: 50%; */
+	flex-flow: row wrap;
+	justify-content: center;
 }
 #regionLabel {
-  font-weight: bold;
+	font-weight: bold;
 }
 #instructionsLabel {
-  font-size: larger;
-  font-weight: bold;
+	font-size: larger;
+	font-weight: bold;
 }
 
 #instructions {
-  display: flex;
-  font-size: 20px;
-  width: 100%;
-  flex-flow: row nowrap;
+	display: flex;
+	font-size: 20px;
+	width: 100%;
+	flex-flow: row nowrap;
 }
 
 #instructionDetails {
-  display: flex;
-  text-align: justify;
+	display: flex;
+	text-align: justify;
 }

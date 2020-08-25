@@ -1,0 +1,33 @@
+#ingredientData {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	height: 300px;
+	border: 2px solid red;
+	justify-content: center;
+}
+#showIngredients {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 20%;
+	height: 300px;
+	border: 2px solid yellow;
+	text-align: left;
+}
+#showMeasurements {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 10%;
+	border: 2px solid blue;
+	text-align: left;
+}
+#ingredientItem {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+}
+#measurementItem {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+}

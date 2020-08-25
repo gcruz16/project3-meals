@@ -1,117 +1,114 @@
 /* * {
   border: 3px solid red;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
 
 #categoryHeading {
-  display: flex;
-  width: 100%;
-  height: 45px;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+	display: flex;
+	width: 100%;
+	height: 45px;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	font-family: "Spicy Rice";
 }
 
 #divSelectCategory {
-  /* border: 3px solid blue; */
-  display: flex;
-  width: 300px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+	/* border: 3px solid blue; */
+	display: flex;
+	width: 300px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
 }
 
 #divCategory {
-  /* border: 3px solid green; */
-  display: flex;
-  width: 400px;
-  height: 40px;
-  justify-content: left;
-  align-items: center;
-  align-content: center;
+	/* border: 3px solid green; */
+	display: flex;
+	width: 400px;
+	height: 40px;
+	justify-content: left;
+	align-items: center;
+	align-content: center;
 }
-
-#selectCategory {
-  display: flex;
-  width: 250px;
-  height: 45px;
-  font-size: 20px;
-  font-weight: bold;
-  /* text-align: center;
-  align-content: center; */
-  align-items: center;
-}
-
 #categoryDropdown {
-  display: flex;
-  width: 180px;
-  height: 40px;
-  border-radius: 20px/10px;
-  font-size: 20px;
+	display: flex;
+	width: 180px;
+	height: 40px;
+	border-radius: 20px/10px;
+	font-size: 20px;
+}
+#selectCategory {
+	display: flex;
+	width: 250px;
+	height: 45px;
+	font-size: 20px;
+	font-weight: bold;
+	align-items: center;
+	font-size: 22px;
 }
 
 #main {
-  display: flex;
-  width: 100%;
-  font-family: "ariel narrow", "ariel";
-  font-size: larger;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border: 2px solid green;
+	/* border: 2px solid green; */
+	display: flex;
+	width: 100%;
+	font-family: "ariel narrow", "ariel";
+	font-size: larger;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 
 #catMeals {
-  display: grid;
-  border: 4px solid pink;
-  width: 100%;
-  font-family: "arial narrow", "arial";
-  font-weight: bold;
-  font-size: larger;
-  /* place-items: center; */
-  justify-content: space-evenly;
-  align-items: center;
-  align-items: center;
+	/* border: 4px solid pink; */
+	display: grid;
+	width: 100%;
+	font-family: "arial narrow", "arial";
+	font-weight: bold;
+	font-size: larger;
+	/* place-items: center; */
+	justify-content: space-evenly;
+	align-items: center;
+	align-items: center;
 }
 #catMealHeading {
-  border: blue 4px solid;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 20px;
-  width: 800px;
-  align-content: center;
-  /* align-items: stretch; */
-  place-items: center;
-  justify-content: flex-start;
+	/* border: blue 4px solid; */
+	display: flex;
+	flex-flow: row wrap;
+	padding: 20px;
+	width: 800px;
+	align-content: center;
+	place-items: center;
+	justify-content: flex-start;
 }
 
 #mealDiv {
-  border: 2px solid lightgrey;
-
-  display: flex;
-  width: 260px;
-  height: 240px;
-  flex-flow: column nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
+	border: 3px solid lightgrey;
+	display: flex;
+	width: 260px;
+	height: 240px;
+	flex-flow: column nowrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
 }
 
 #mealImage {
-  height: 125px;
-  width: 170px;
-  align-items: center;
+	height: 125px;
+	width: 170px;
+	align-items: center;
 }
 
 #mealName {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-items: center;
-  font-weight: bold;
-  font-size: large;
-  width: 220px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	justify-items: center;
+	font-weight: bold;
+	font-size: large;
+	width: 220px;
 }
