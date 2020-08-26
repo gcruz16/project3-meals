@@ -1,25 +1,73 @@
 import React, { Component } from "react";
 import { Route, Switch, Link } from "react-router-dom";
-import MealCategories from "../MealCategories";
+import MealSubOption from "../MealSubOption";
 import MealDetails from "../MealDetails";
 import axios from "axios";
 import "./App.css";
 
-const categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
+// let categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
+let baseFilterByURL = "https://www.themealdb.com/api/json/v1/1/list.php?";
+let filterByURL = "";
+let myFilterBy = "";
+let subFilterByURL = "";
+let filterByResponse = "";
+let subFilterByResponse = "";
 
 class App extends Component {
 	constructor() {
 		super();
 		this.state = {
+			filterBy: "category",
+			filterByData: [],
+			subFilterByData: [],
 			mealCategories: [],
 			categoryMeals: [],
 			mealDetails: [],
 		};
 	}
+	getSearchBy = async (event) => {
+		myFilterBy = event.target.value;
+		switch (myFilterBy) {
+			case "category":
+				filterByURL = baseFilterByURL + "c=list";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
+				break;
+			case "ingredient":
+				filterByURL = baseFilterByURL + "i=list";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?i=Chicken`;
+				break;
+			case "region":
+				filterByURL = baseFilterByURL + "a=list";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?a=American`;
+				break;
+			default:
+				filterByURL = baseFilterByURL + "c=list";
+				break;
+		}
+		filterByResponse = await axios.get(filterByURL);
+		subFilterByResponse = await axios.get(subFilterByURL);
 
-	getCategoryMeals = async (event) => {
-		let changeCategory = event.target.value;
-		const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${changeCategory}`;
+		this.setState({
+			filterBy: myFilterBy,
+			filterByData: filterByResponse.data.meals,
+			subFilterByData: subFilterByResponse.data.meals,
+		});
+	};
+	getSubOptionMeals = async (event) => {
+		let changeSubOption = event.target.value;
+		let baseSubOptionMealURL = "";
+		let mealsURL = "";
+		switch (this.setState.filterBy) {
+			case "category":
+				mealsURL = baseSubOptionMealURL + `c=${changeSubOption}`;
+				break;
+			case "ingredient":
+				mealsURL = baseSubOptionMealURL + `i=${changeSubOption}`;
+				break;
+			case "region":
+				mealsURL = baseSubOptionMealURL + `r=${changeSubOption}`;
+				break;
+		}
 		let response = await axios.get(mealsURL);
 		this.setState({
 			categoryMeals: response.data.meals,
@@ -27,13 +75,25 @@ class App extends Component {
 	};
 
 	componentDidMount = async () => {
-		let response = await axios.get(categoryURL);
-		const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
-		let mealResponse = await axios.get(mealsURL);
+		filterByURL = baseFilterByURL + "c=list";
+		subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
+
+		filterByResponse = await axios.get(filterByURL);
+		subFilterByResponse = await axios.get(subFilterByURL);
 		this.setState({
-			categoryMeals: mealResponse.data.meals,
-			mealCategories: response.data.categories,
+			filterBy: myFilterBy,
+			filterByData: filterByResponse.data.meals,
+			subFilterByData: subFilterByResponse.data.meals,
 		});
+		// console.log(this.state.filterByData);
+		// console.log(this.state.subFilterByData);
+		// // let response = await axios.get(categoryURL);
+		// const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
+		// let mealResponse = await axios.get(mealsURL);
+		// this.setState({
+		// 	categoryMeals: mealResponse.data.meals,
+		// 	mealCategories: response.data.categories,
+		// });
 	};
 
 	getMealDetails = async (event) => {
@@ -79,10 +139,11 @@ class App extends Component {
 							exact
 							path="/"
 							render={(routerProps) => (
-								<MealCategories
+								<MealSubOption
 									{...this.state}
-									getCategoryMeals={this.getCategoryMeals}
+									getsubOptionMeals={this.getSubOptionMeals}
 									getMealDetails={this.getMealDetails}
+									getSearchBy={this.getSearchBy}
 									{...routerProps}
 								/>
 							)}

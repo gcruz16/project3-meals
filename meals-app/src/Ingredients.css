@@ -26,7 +26,7 @@
 	/* border: 2px solid blue; */
 	display: flex;
 	flex-flow: column nowrap;
-	width: 30%;
+	width: 45%;
 	text-align: left;
 	font-size: 20px;
 	font-family: "Balsamiq Sans";
@@ -35,7 +35,7 @@
 	/* border: 2px solid yellow; */
 	display: flex;
 	flex-flow: column nowrap;
-	width: 40%;
+	width: 45%;
 	height: 300px;
 	text-align: left;
 	font-size: 20px;
