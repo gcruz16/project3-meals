@@ -71,6 +71,14 @@
 	font-weight: bold;
 	font-size: 25px;
 }
+#youtoubeDiv {
+	display: flex;
+}
+#youtoubeIcon {
+	display: flex;
+	width: 100px;
+	height: 100px;
+}
 #instructionsLabel {
 	display: flex;
 	font-size: larger;

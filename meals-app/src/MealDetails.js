@@ -108,6 +108,15 @@ function MealDetails(props) {
 								<label id="regionLabel">Region: </label>
 								{mealDetail.strArea}
 							</div>
+							<div id="youtoubeDiv">
+								<a href={mealDetail.strYoutube}>
+									<img
+										alt=""
+										id="youtoubeIcon"
+										src="https://cdn.iconscout.com/icon/free/png-256/youtube-86-226404.png"
+									/>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div id="ingredients">
