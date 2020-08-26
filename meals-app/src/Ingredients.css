@@ -14,9 +14,12 @@
 	width: 600px;
 	height: 60px;
 	font-size: 33px;
-	justify-content: center;
+	margin-left: 29%;
+	justify-content: left;
+	/* align-content: space-between; */
 }
 #listIngredients {
+	/* border: solid 3px blue; */
 	display: flex;
 	width: 600px;
 	justify-content: center;
@@ -26,20 +29,25 @@
 	/* border: 2px solid blue; */
 	display: flex;
 	flex-flow: column nowrap;
-	width: 45%;
+	width: 50%;
 	text-align: left;
 	font-size: 20px;
-	font-family: "Balsamiq Sans";
+	font-weight: bold;
+	/* font-family: "Balsamiq Sans narrow"; */
+	font-family: "arial narrow";
 }
 #showIngredients {
 	/* border: 2px solid yellow; */
 	display: flex;
 	flex-flow: column nowrap;
-	width: 45%;
+	width: 35%;
 	height: 300px;
 	text-align: left;
+	font-weight: bold;
 	font-size: 20px;
-	font-family: "Balsamiq Sans";
+	font-family: "arial narrow";
+
+	/* font-family: "Balsamiq Sans"; */
 }
 
 #ingredientItem {
