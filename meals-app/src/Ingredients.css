@@ -1,26 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Balsamiq+Sans&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
+
 #ingredientData {
+	/* border: 2px solid red; */
 	display: flex;
-	flex-flow: row nowrap;
-	width: 100%;
-	height: 300px;
-	border: 2px solid red;
+	flex-flow: row wrap;
+	width: 600px;
+	height: 450px;
+	justify-content: flex-end;
+}
+#ingredientsTitle {
+	/* border: 2px solid rgb(217, 255, 0); */
+	display: flex;
+	width: 600px;
+	height: 60px;
+	font-size: 33px;
 	justify-content: center;
 }
-#showIngredients {
+#listIngredients {
 	display: flex;
-	flex-flow: column nowrap;
-	width: 20%;
-	height: 300px;
-	border: 2px solid yellow;
-	text-align: left;
+	width: 600px;
+	justify-content: center;
+	align-content: center;
 }
 #showMeasurements {
+	/* border: 2px solid blue; */
 	display: flex;
 	flex-flow: column nowrap;
-	width: 10%;
-	border: 2px solid blue;
+	width: 30%;
 	text-align: left;
+	font-size: 20px;
+	font-family: "Balsamiq Sans";
 }
+#showIngredients {
+	/* border: 2px solid yellow; */
+	display: flex;
+	flex-flow: column nowrap;
+	width: 40%;
+	height: 300px;
+	text-align: left;
+	font-size: 20px;
+	font-family: "Balsamiq Sans";
+}
+
 #ingredientItem {
 	display: flex;
 	flex-flow: column nowrap;

@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Chela+One&family=Chewy&display=swap");
 
+a {
+	text-decoration: none;
+}
 .App {
 	text-align: center;
 }
 
 #pageHeading {
-	/* border: 2px solid blue; */
+	/* border: 2px solid white; */
 	display: flex;
 	width: 100%;
 	height: 200px;
@@ -13,6 +16,7 @@
 	justify-content: space-around;
 	background-color: black;
 	color: #d2f6cb;
+	align-items: center;
 }
 
 #titleDiv {
@@ -25,23 +29,6 @@
 	background-color: black;
 	font-family: "Aclonica";
 }
-
-#pageImage {
-	display: flex;
-	width: 375px;
-	margin-right: 90px;
-	height: 200px;
-	border-radius: 90px/25px;
-}
-
-#imageDiv {
-	/* border: 2px solid red; */
-	display: flex;
-	width: 50%;
-	justify-content: center;
-	background-color: black;
-}
-
 #pageTitle {
 	/* background-color: mediumspringgreen; */
 	display: flex;
@@ -51,7 +38,40 @@
 	flex-flow: nowrap;
 	font-family: "Chela One";
 }
-
+#imageDiv {
+	/* border: 2px solid red; */
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	background-color: black;
+	align-items: center;
+}
+#pageImage {
+	display: flex;
+	width: 400px;
+	margin-right: 90px;
+	height: 170px;
+	border-radius: 70px/15px;
+}
+#menuIcons {
+	/* border: 2px solid white; */
+	display: flex;
+	width: 10%;
+	height: 200px;
+	align-items: center;
+}
+#homePage {
+	display: flex;
+	color: white;
+	font-family: "Chela One";
+	font-size: 20px;
+}
+#iconHomePage {
+	display: flex;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px/25px;
+}
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;

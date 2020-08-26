@@ -1,7 +1,7 @@
 /* * {
   border: 3px solid red;
 } */
-@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Balsamiq+Sans&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
 
 #categoryHeading {
 	display: flex;
@@ -36,10 +36,11 @@
 }
 #categoryDropdown {
 	display: flex;
-	width: 180px;
+	width: 250px;
 	height: 40px;
 	border-radius: 20px/10px;
 	font-size: 20px;
+	font-family: "Aclonica";
 }
 #selectCategory {
 	display: flex;
@@ -111,4 +112,5 @@
 	font-weight: bold;
 	font-size: large;
 	width: 220px;
+	font-family: "Balsamiq Sans";
 }

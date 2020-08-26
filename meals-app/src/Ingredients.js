@@ -23,8 +23,11 @@ function Ingredients(props) {
 	console.log(props);
 	return (
 		<div id="ingredientData">
-			<div id="showMeasurements">{showMeasurementArray}</div>
-			<div id="showIngredients">{showIngredientsArray}</div>
+			<div id="ingredientsTitle">Ingredients</div>
+			<div id="listIngredients">
+				<div id="showMeasurements">{showMeasurementArray}</div>
+				<div id="showIngredients">{showIngredientsArray}</div>
+			</div>
 		</div>
 	);
 }

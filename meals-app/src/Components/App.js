@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import MealCategories from "../MealCategories";
 import MealDetails from "../MealDetails";
 import axios from "axios";
@@ -49,6 +49,10 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div id="pageHeading">
+					<img
+						alt=""
+						src="https://image.flaticon.com/icons/svg/608/608857.svg"
+					/>
 					<div id="titleDiv">
 						<h1 id="pageTitle">The Meal Database</h1>
 					</div>
@@ -58,6 +62,15 @@ class App extends Component {
 							id="pageImage"
 							src="https://media.self.com/photos/5ec2fa11589de8da3fd4ccbd/master/w_1280,h_960,c_limit/veestro two final.png"
 						/>
+					</div>
+					<div id="menuIcons">
+						<Link to="/" id="homePage">
+							<img
+								alt=""
+								id="iconHomePage"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSmTFP1d8qpA1pcUhE1RWfz-o_JLSYGqSKIw&usqp=CAU"
+							/>
+						</Link>
 					</div>
 				</div>
 				<main>
