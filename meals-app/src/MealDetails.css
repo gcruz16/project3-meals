@@ -1,101 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Balsamiq+Sans&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
 
 #mainMealDetail {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 #divStrName {
-	display: flex;
-	width: 100%;
-	color: #696969;
+  display: flex;
+  width: 100%;
+  color: #696969;
 }
 #divImgIngredients {
-	display: flex;
-	justify-content: flex-start;
-	width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 #divImgMeal {
-	/* border: 2px solid lime;*/
-	display: flex;
-	width: 50%;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	justify-items: center;
-	background-color: #e8f6cb;
+  /* border: 2px solid lime;*/
+  display: flex;
+  width: 50%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #e8f6cb;
 }
 #imgMeal {
-	display: flex;
-	width: 400px;
-	height: 300px;
-	justify-self: center;
-	/* margin-left: 30%; */
-	justify-content: space-evenly;
+  display: flex;
+  width: 400px;
+  height: 300px;
+  justify-self: center;
+  /* margin-left: 30%; */
+  justify-content: space-evenly;
 }
 #ingredients {
-	display: flex;
+  display: flex;
 }
 #strMeal {
-	display: flex;
-	width: 100%;
-	font-size: 45px;
-	font-weight: 500;
-	flex-flow: row nowrap;
-	justify-items: center;
-	justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 45px;
+  font-weight: 500;
+  flex-flow: row nowrap;
+  justify-items: center;
+  justify-content: center;
 }
 
 #category {
-	display: flex;
-	font-size: 25px;
-	flex-flow: row wrap;
-	justify-content: center;
-	font-family: "Balsamiq Sans";
+  display: flex;
+  font-size: 25px;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "Balsamiq Sans";
 }
 
 #categoryLabel {
-	display: flex;
-	font-weight: bold;
-	font-size: 25px;
+  display: flex;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 #region {
-	display: flex;
-	font-size: 25px;
-	flex-flow: row wrap;
-	justify-content: center;
-	font-family: "Balsamiq Sans";
+  display: flex;
+  font-size: 25px;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "Balsamiq Sans";
 }
 #regionLabel {
-	font-weight: bold;
-	font-size: 25px;
+  font-weight: bold;
+  font-size: 25px;
 }
 #youtoubeDiv {
-	display: flex;
+  display: flex;
 }
 #youtoubeIcon {
-	display: flex;
-	width: 100px;
-	height: 100px;
+  display: flex;
+  margin-left: 40%;
+  width: 100px;
+  height: 100px;
 }
 #instructionsLabel {
-	display: flex;
-	font-size: larger;
-	font-weight: bold;
-	font-size: 33px;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  font-size: 33px;
 }
 
 #instructions {
-	display: flex;
-	width: 100%;
-	flex-flow: row nowrap;
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
 }
 
 #instructionDetails {
-	display: flex;
-	text-align: justify;
-	height: 200px;
-	font-size: 20px;
-	font-family: "Balsamiq Sans";
+  display: flex;
+  text-align: justify;
+  height: 200px;
+  font-size: 20px;
+  font-family: "Balsamiq Sans";
 }
