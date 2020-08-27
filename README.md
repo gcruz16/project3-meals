@@ -22,23 +22,33 @@ This application displays a database of meals and recipes. It enables users to s
 4. Users need to be able to see a link to check a video from meal detail page.
 
 **Wireframe Images Used In This Project**
- <img src="https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png"  width="300" height="300" align-content="center"/>
-![](https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png)
+ <img src="https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
+
 
 ## Technical Requirements
 
-1. This application uses html and extensive CSS code to create the views for the user.
-2. It uses Axios to retrieve the API meal data to the program.
-3. It uses Javascript, XML and React to perform all the database functions.
+1. HTML and CSS code to create the views for the user.
+2. Axios to retrieve the API meal data to the program.
+3. Javascript, XML and React to perform all the database functions.
 4. It is deployed on Heroku.
+5. API: [The Meal DB](https://www.themealdb.com/api.php) 
+List all Categories, Area, Ingredients
+https://www.themealdb.com/api/json/v1/1/list.php?c=list
+https://www.themealdb.com/api/json/v1/1/list.php?a=list
+https://www.themealdb.com/api/json/v1/1/list.php?i=list
+Filter by main ingredient
+https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
+Filter by Category
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+Filter by Area
+https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian
+Search meal by name
+https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 
-\*\*The application is hosted on https:// and saved to https://github.com/gcruz16/project3-meals
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project Links
 - [github repo](https://github.com/gcruz16/project3-meals)
-- [deployment]()
+- [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
@@ -81,13 +91,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ### Making a Progressive Web App
 
