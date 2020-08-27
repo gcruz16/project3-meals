@@ -26,9 +26,10 @@ This application displays a database of meals and recipes. It enables users to s
  <img src="https://github.com/gcruz16/project3-meals/blob/master/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
 
 ## Menu Search Screen
-<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuAppMain.png"  width="400" height="400" align-content="center"/>
+<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuAppMain.png"  width="500" height="400" align-content="center"/>
+
 ## Menu Detail Screen
-<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuScreen.png"  width="400" height="400" align-content="center"/>
+<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuScreen.png"  width="500" height="400" align-content="center"/>
 
 ## Technical Requirements
 
