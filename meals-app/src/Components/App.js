@@ -23,12 +23,14 @@ class App extends Component {
 			filterByData: [],
 			subFilterByData: [],
 			mealDetails: [],
+			filterChanged: false,
 		};
 	}
 	getFilterBy = async (event) => {
 		console.log("getFilterBy");
 		myFilterBy = event.target.value;
 		console.log("myFilterBy-->" + myFilterBy);
+		console.log(event.target);
 		switch (myFilterBy) {
 			case "category":
 				filterByURL = baseFilterByURL + "c=list";
@@ -58,6 +60,7 @@ class App extends Component {
 
 		this.setState({
 			filterBy: myFilterBy,
+			filterChanged: true,
 			subFilterBy: mySubFilterBy,
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
@@ -91,6 +94,7 @@ class App extends Component {
 		response = await axios.get(mealsURL);
 		this.setState({
 			subFilterBy: mySubFilterBy,
+			filterChanged: false,
 			subFilterByData: response.data.meals,
 		});
 	};
@@ -104,6 +108,7 @@ class App extends Component {
 		this.setState({
 			filterBy: myFilterBy,
 			subFilterBy: mySubFilterBy,
+			filterChanged: true,
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
 		});

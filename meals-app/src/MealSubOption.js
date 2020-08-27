@@ -7,6 +7,8 @@ function MealSubOption(props) {
 	let subOption = "";
 	console.log(props);
 	// return <div>something</div>;
+	var selected = props.filterChanged ? " selected" : "";
+
 	switch (props.filterBy) {
 		case "category":
 			subOption = props.filterByData.map((category, index) => {
@@ -67,24 +69,22 @@ function MealSubOption(props) {
 		<div>
 			<div id="categoryHeading">
 				<div id="divSelectCategory">
-					<p id="selectCategory">Select Meal by:</p>
-					<select id="categoryDropdown2" onChange={props.getFilterBy}>
+					<p id="selectCategory">Selection Criteria:</p>
+					<select id="categoryDropdown" onChange={props.getFilterBy}>
 						<option value="category">Category</option>
 						<option value="ingredient">Ingredient</option>
 						<option value="region">Region</option>
 					</select>
 				</div>
-
-				<div id="divSubFilter">
-					<div id="divSubFilter">
-						<p id="selectSubFilter"> Select sub Filter:</p>
-						<select id="categoryDropdown" onChange={props.getSubOpMeal}>
+				<div id="divCategory">
+					<div id="divSelectSubCategory">
+						<p id="selectSubCategory"> Select {props.filterBy} :</p>
+						<select id="subCategoryDropdown" onChange={props.getFilterBy}>
 							{subOption}
 						</select>
 					</div>
 				</div>
 			</div>
-
 			<div id="main">
 				<div id="catMeals">
 					<div id="catMealHeading">{mealsArray}</div>
