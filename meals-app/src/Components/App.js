@@ -63,14 +63,12 @@ class App extends Component {
 			subFilterByData: subFilterByResponse.data.meals,
 		});
 	};
-	// getNewFunction = async (event) => {
-	// 	console.log("getNewFunction");
-	// };
+
 	getSubOpMeal = async (event) => {
 		let baseSubMealURL = "https://www.themealdb.com/api/json/v1/1/filter.php?";
 		let mealsURL = "";
 		let response = "";
-		console.log("getSubOptionMeals");
+		console.log("getSubOpMeal");
 		console.log(this.state.filterBy);
 		console.log(this.state.subFilterBy);
 		console.log(event.target.value);
@@ -109,17 +107,7 @@ class App extends Component {
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
 		});
-		// console.log(this.state.filterByData);
-		// console.log(this.state.subFilterByData);
-		// // let response = await axios.get(categoryURL);
-		// const mealsURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
-		// let mealResponse = await axios.get(mealsURL);
-		// this.setState({
-		// 	categoryMeals: mealResponse.data.meals,
-		// 	mealCategories: response.data.categories,
-		// });
 	};
-
 	getMealDetails = async (event) => {
 		let meal = event.target.getAttribute("alt");
 		const mealURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
@@ -128,7 +116,6 @@ class App extends Component {
 			mealDetails: response.data.meals,
 		});
 	};
-
 	render() {
 		return (
 			<div className="App">
@@ -166,8 +153,8 @@ class App extends Component {
 							render={(routerProps) => (
 								<MealSubOption
 									{...this.state}
-									getFilterBy={this.getFilterBy}
 									getSubOpMeal={this.getSubOpMeal}
+									getFilterBy={this.getFilterBy}
 									getMealDetails={this.getMealDetails}
 									{...routerProps}
 								/>
