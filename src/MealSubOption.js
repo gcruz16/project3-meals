@@ -7,12 +7,13 @@ function MealSubOption(props) {
 	let subOption = "";
 	console.log(props);
 	// return <div>something</div>;
-	var selected = props.filterChanged ? " selected" : "";
+	var selected = "";
 
 	switch (props.filterBy) {
 		case "category":
 			subOption = props.filterByData.map((category, index) => {
 				return (
+					//selected= props.filterChanged && index === 0 ? " selected" : "";
 					<option key={index + 1} value={category.strCategory}>
 						{category.strCategory}
 					</option>
