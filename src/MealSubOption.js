@@ -13,7 +13,11 @@ function MealSubOption(props) {
     case "category":
       subOption = props.filterByData.map((category, index) => {
         return (
-          <option key={index + 1} value={category.strCategory}>
+          <option
+            className="categoryOption"
+            key={index + 1}
+            value={category.strCategory}
+          >
             {category.strCategory}
           </option>
         );
@@ -22,7 +26,11 @@ function MealSubOption(props) {
     case "ingredient":
       subOption = props.filterByData.map((ingredient, index) => {
         return (
-          <option key={index + 1} value={ingredient.strIngredient}>
+          <option
+            className="categoryOption"
+            key={index + 1}
+            value={ingredient.strIngredient}
+          >
             {ingredient.strIngredient}
           </option>
         );
@@ -31,7 +39,11 @@ function MealSubOption(props) {
     case "region":
       subOption = props.filterByData.map((region, index) => {
         return (
-          <option key={index + 1} value={region.strArea}>
+          <option
+            className="categoryOption"
+            key={index + 1}
+            value={region.strArea}
+          >
             {region.strArea}
           </option>
         );
@@ -40,7 +52,11 @@ function MealSubOption(props) {
     default:
       subOption = props.filterByData.map((category, index) => {
         return (
-          <option key={index + 1} value={category.strCategory}>
+          <option
+            className="categoryOption"
+            key={index + 1}
+            value={category.strCategory}
+          >
             {category.strCategory}
           </option>
         );
@@ -71,15 +87,21 @@ function MealSubOption(props) {
         <div id="divSelectCategory">
           <p id="selectCategory">Selection Criteria:</p>
           <select id="categoryDropdown" onChange={props.getFilterBy}>
-            <option value="category">Category</option>
-            <option value="ingredient">Ingredient</option>
-            <option value="region">Region</option>
+            <option className="categoryOption" value="category">
+              Category
+            </option>
+            <option className="categoryOption" value="ingredient">
+              Ingredient
+            </option>
+            <option className="categoryOption" value="region">
+              Region
+            </option>
           </select>
         </div>
         <div id="divCategory">
           <div id="divSelectSubCategory">
             <p id="selectSubCategory"> Select {props.filterBy} :</p>
-            <select id="subCategoryDropdown" onChange={props.getFilterBy}>
+            <select id="subCategoryDropdown" onChange={props.getSubOpMeal}>
               {subOption}
             </select>
           </div>
