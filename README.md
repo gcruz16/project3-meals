@@ -1,35 +1,54 @@
-# Meals and Recipe Application
-
-(put an image here)
+# **Meals and Recipe Application** <img src="https://image.flaticon.com/icons/svg/608/608857.svg"  width="70" height="70" />
+***
 
 ## Application Description
+...
 
 This application displays a database of meals and recipes. It enables users to select meals from the database by category and then by selecting a specific meal.
 
 ### User Stories
-
+### MVP
 1.  Users must be able to use this application to find recipes.
 2.  Users need to be able to filter by category.
 3.  Users need a dropdown window that contains categories to select from.
 4.  After retrieving the data, users need to see the name and image of the meal.
 5.  Users need to be able to see the list of ingredients and instructions when they click on the meal.
+6.  Users need a home page icon in the heading section so they can toggle to home page anytime.
+
+### Post MVP
+1. Users need to be able to filter by multiple criteria such as: category, ingredient and region.
+2. Users need a dropdown window that contains multiple criteria (category, ingredient and region) to select from.
+3. Users need another dorpdown window that contains a list based on criteria(category, ingredient and region) they selected.
+4. Users need to be able to see a link to check a video from meal detail page.
 
 **Wireframe Images Used In This Project**
-![](Project3wireframeimage1.png)
-(add photo of the application)
+ <img src="https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
 
-### Technical Requirements
 
-1. This application uses html and extensive CSS code to create the views for the user.
-2. It uses Axios to retrieve the API meal data to the program.
-3. It uses Javascript, XML and React to perform all the database functions.
+## Technical Requirements
+
+1. HTML and CSS code to create the views for the user.
+2. Axios to retrieve the API meal data to the program.
+3. Javascript, XML and React to perform all the database functions.
 4. It is deployed on Heroku.
+5. API: [The Meal DB](https://www.themealdb.com/api.php) 
+### List all Categories, Area, Ingredients
+https://www.themealdb.com/api/json/v1/1/list.php?c=list
+https://www.themealdb.com/api/json/v1/1/list.php?a=list
+https://www.themealdb.com/api/json/v1/1/list.php?i=list
+### Filter by main ingredient
+https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
+### Filter by Category
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+### Filter by Area
+https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian
+### Search meal by name
+https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 
-\*\*The application is hosted on https:// and saved to https://github.com/gcruz16/project3-meals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Project Links
+- [github repo](https://github.com/gcruz16/project3-meals)
+- [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
@@ -72,13 +91,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ### Making a Progressive Web App
 
