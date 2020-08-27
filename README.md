@@ -22,7 +22,7 @@ This application displays a database of meals and recipes. It enables users to s
 4. Users need to be able to see a link to check a video from meal detail page.
 
 **Wireframe Images Used In This Project**
- <img src="https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
+ <img src="https://github.com/gcruz16/project3-meals/blob/master/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
 
 
 ## Technical Requirements
@@ -49,6 +49,7 @@ https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 ## Project Links
 - [github repo](https://github.com/gcruz16/project3-meals)
 - [Create React App](https://github.com/facebook/create-react-app).
+- [Jeff's Deployed app on Heroku](https://jeffb-project3-meals.herokuapp.com/)
 
 In the project directory, you can run:
 
