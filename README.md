@@ -49,6 +49,6 @@ https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 ## Project Links
 - [github repo](https://github.com/gcruz16/project3-meals)
 - [Jeff's Deployed app on Heroku](https://jeffb-project3-meals.herokuapp.com/)
-- [Gladys' Deployed app on Heroku]https://meals-app-project3.herokuapp.com/)
+- [Gladys' Deployed app on Heroku](https://meals-app-project3.herokuapp.com/)
 
 
