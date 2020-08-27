@@ -25,14 +25,19 @@ This application displays a database of meals and recipes. It enables users to s
 **Wireframe Images Used In This Project**
  <img src="https://github.com/gcruz16/project3-meals/blob/master/public/Project3wireframeimage1.png"  width="400" height="400" align-content="center"/>
 
+## Menu Search Screen
+<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuAppMain.png"  width="400" height="400" align-content="center"/>
+## Menu Detail Screen
+<img src="https://github.com/gcruz16/project3-meals/blob/master/public/MenuScreen.png"  width="400" height="400" align-content="center"/>
 
 ## Technical Requirements
 
 1. HTML and CSS code to create the views for the user.
 2. Axios to retrieve the API meal data to the program.
-3. Javascript, XML and React to perform all the database functions.
-4. It is deployed on Heroku.
-5. API: [The Meal DB](https://www.themealdb.com/api.php) 
+3. Javascript and XML to perform all the database functions.
+4. React, react-dom and react-router-dom. 
+5. It is deployed on Heroku.
+6. API: [The Meal DB](https://www.themealdb.com/api.php) 
   #### List all Categories, Area, Ingredients
 * https://www.themealdb.com/api/json/v1/1/list.php?c=list 
 * https://www.themealdb.com/api/json/v1/1/list.php?a=list 
