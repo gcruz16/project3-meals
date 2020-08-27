@@ -7,7 +7,7 @@
 This application displays a database of meals and recipes. It enables users to select meals from the database by category and then by selecting a specific meal.
 
 ### User Stories
-###MVP
+### MVP
 1.  Users must be able to use this application to find recipes.
 2.  Users need to be able to filter by category.
 3.  Users need a dropdown window that contains categories to select from.
@@ -15,17 +15,17 @@ This application displays a database of meals and recipes. It enables users to s
 5.  Users need to be able to see the list of ingredients and instructions when they click on the meal.
 6.  Users need a home page icon in the heading section so they can toggle to home page anytime.
 
-###Post MVP
+### Post MVP
 1. Users need to be able to filter by multiple criteria such as: category, ingredient and region.
 2. Users need a dropdown window that contains multiple criteria (category, ingredient and region) to select from.
 3. Users need another dorpdown window that contains a list based on criteria(category, ingredient and region) they selected.
 4. Users need to be able to see a link to check a video from meal detail page.
 
 **Wireframe Images Used In This Project**
-![](Project3wireframeimage1.png)
-(add photo of the application)
+ <img src="https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png"  width="300" height="300" align-content="center"/>
+![](https://github.com/gcruz16/project3-meals/blob/master/meals-app/public/Project3wireframeimage1.png)
 
-### Technical Requirements
+## Technical Requirements
 
 1. This application uses html and extensive CSS code to create the views for the user.
 2. It uses Axios to retrieve the API meal data to the program.
@@ -36,7 +36,9 @@ This application displays a database of meals and recipes. It enables users to s
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Links
+- [github repo](https://github.com/gcruz16/project3-meals)
+- [deployment]()
 
 In the project directory, you can run:
 
