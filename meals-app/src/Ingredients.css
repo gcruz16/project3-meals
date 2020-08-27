@@ -1,62 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Balsamiq+Sans&family=Chela+One&family=Chewy&family=Spicy+Rice&display=swap");
 
 #ingredientData {
-	/* border: 2px solid red; */
-	display: flex;
-	flex-flow: row wrap;
-	width: 600px;
-	height: 450px;
-	justify-content: flex-end;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  /* height: 480px; */
+  justify-content: flex-end;
 }
 #ingredientsTitle {
-	/* border: 2px solid rgb(217, 255, 0); */
-	display: flex;
-	width: 600px;
-	height: 60px;
-	font-size: 33px;
-	margin-left: 29%;
-	justify-content: left;
-	/* align-content: space-between; */
+  /* border: 2px solid rgb(217, 255, 0); */
+  display: flex;
+  width: 600px;
+  color: rgb(58, 4, 4);
+  height: 50px;
+  font-size: 33px;
+  margin-left: 29%;
+  justify-content: left;
+  /* align-content: space-between; */
 }
 #listIngredients {
-	/* border: solid 3px blue; */
-	display: flex;
-	width: 600px;
-	justify-content: center;
-	align-content: center;
+  /* border: solid 3px green; */
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  align-content: center;
 }
 #showMeasurements {
-	/* border: 2px solid blue; */
-	display: flex;
-	flex-flow: column nowrap;
-	width: 50%;
-	text-align: left;
-	font-size: 20px;
-	font-weight: bold;
-	/* font-family: "Balsamiq Sans narrow"; */
-	font-family: "arial narrow";
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  /* font-family: "Balsamiq Sans narrow"; */
+  font-family: "arial narrow";
 }
 #showIngredients {
-	/* border: 2px solid yellow; */
-	display: flex;
-	flex-flow: column nowrap;
-	width: 35%;
-	height: 300px;
-	text-align: left;
-	font-weight: bold;
-	font-size: 20px;
-	font-family: "arial narrow";
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-flow: column nowrap;
+  width: 35%;
+  height: 300px;
+  height: 100%;
 
-	/* font-family: "Balsamiq Sans"; */
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "arial narrow";
+
+  /* font-family: "Balsamiq Sans"; */
 }
 
 #ingredientItem {
-	display: flex;
-	flex-flow: column nowrap;
-	width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
 }
 #measurementItem {
-	display: flex;
-	flex-flow: column nowrap;
-	width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
 }

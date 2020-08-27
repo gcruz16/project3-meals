@@ -1,5 +1,7 @@
 # Meals and Recipe Application
 
+(put an image here)
+
 ## Application Description
 
 This application displays a database of meals and recipes. It enables users to select meals from the database by category and then by selecting a specific meal.
@@ -14,6 +16,7 @@ This application displays a database of meals and recipes. It enables users to s
 
 **Wireframe Images Used In This Project**
 ![](Project3wireframeimage1.png)
+(add photo of the application)
 
 ### Technical Requirements
 
