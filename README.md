@@ -33,17 +33,17 @@ This application displays a database of meals and recipes. It enables users to s
 3. Javascript, XML and React to perform all the database functions.
 4. It is deployed on Heroku.
 5. API: [The Meal DB](https://www.themealdb.com/api.php) 
-### List all Categories, Area, Ingredients
+  #### List all Categories, Area, Ingredients
 * https://www.themealdb.com/api/json/v1/1/list.php?c=list 
 * https://www.themealdb.com/api/json/v1/1/list.php?a=list 
 * https://www.themealdb.com/api/json/v1/1/list.php?i=list 
-### Filter by main ingredient
+  #### Filter by main ingredient
 * https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
-### Filter by Category
+  #### Filter by Category
 * https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
-### Filter by Area
+  #### Filter by Area
 * https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian
-### Search meal by name
+  #### Search meal by name
 * https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 
 
