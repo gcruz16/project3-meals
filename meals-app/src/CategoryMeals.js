@@ -1,9 +1,7 @@
 import React from "react";
 import "./CategoryMeals.css";
-// import { Link } from "react-router-dom";
 
 function CategoryMeals(props) {
-	// console.log(props.match);
 	const mealsArray = props.categoryMeals.map((meal, index) => {
 		return (
 			<div>
