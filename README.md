@@ -1,18 +1,25 @@
-# Meals and Recipe Application
-
-(put an image here)
+# **Meals and Recipe Application** <img src="https://image.flaticon.com/icons/svg/608/608857.svg"  width="70" height="70" />
+***
 
 ## Application Description
+...
 
 This application displays a database of meals and recipes. It enables users to select meals from the database by category and then by selecting a specific meal.
 
 ### User Stories
-
+###MVP
 1.  Users must be able to use this application to find recipes.
 2.  Users need to be able to filter by category.
 3.  Users need a dropdown window that contains categories to select from.
 4.  After retrieving the data, users need to see the name and image of the meal.
 5.  Users need to be able to see the list of ingredients and instructions when they click on the meal.
+6.  Users need a home page icon in the heading section so they can toggle to home page anytime.
+
+###Post MVP
+1. Users need to be able to filter by multiple criteria such as: category, ingredient and region.
+2. Users need a dropdown window that contains multiple criteria (category, ingredient and region) to select from.
+3. Users need another dorpdown window that contains a list based on criteria(category, ingredient and region) they selected.
+4. Users need to be able to see a link to check a video from meal detail page.
 
 **Wireframe Images Used In This Project**
 ![](Project3wireframeimage1.png)
