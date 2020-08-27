@@ -62,7 +62,6 @@ class App extends Component {
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
 		});
-		this.getSubOptionMeals();
 	};
 	// getNewFunction = async (event) => {
 	// 	console.log("getNewFunction");
