@@ -8,7 +8,8 @@ import "./App.css";
 // let categoryURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 let baseFilterByURL = "https://www.themealdb.com/api/json/v1/1/list.php?";
 let filterByURL = "";
-let myFilterBy = "";
+let myFilterBy = "Category";
+let mySubFilterBy = "Beef";
 let subFilterByURL = "";
 let filterByResponse = "";
 let subFilterByResponse = "";
@@ -18,59 +19,82 @@ class App extends Component {
 		super();
 		this.state = {
 			filterBy: "category",
+			subFilterBy: "Beef",
 			filterByData: [],
 			subFilterByData: [],
-			mealCategories: [],
-			categoryMeals: [],
 			mealDetails: [],
 		};
 	}
-	getSearchBy = async (event) => {
+	getFilterBy = async (event) => {
+		console.log("getFilterBy");
 		myFilterBy = event.target.value;
+		console.log("myFilterBy-->" + myFilterBy);
 		switch (myFilterBy) {
 			case "category":
 				filterByURL = baseFilterByURL + "c=list";
-				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef`;
+				mySubFilterBy = "Beef";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${mySubFilterBy}`;
 				break;
 			case "ingredient":
 				filterByURL = baseFilterByURL + "i=list";
-				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?i=Chicken`;
+				mySubFilterBy = "Chicken";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${mySubFilterBy}`;
 				break;
 			case "region":
 				filterByURL = baseFilterByURL + "a=list";
-				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?a=American`;
+				mySubFilterBy = "American";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${mySubFilterBy}`;
 				break;
 			default:
 				filterByURL = baseFilterByURL + "c=list";
+				mySubFilterBy = "Beef";
+				subFilterByURL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${mySubFilterBy}`;
 				break;
 		}
+		console.log(subFilterByURL);
+
 		filterByResponse = await axios.get(filterByURL);
 		subFilterByResponse = await axios.get(subFilterByURL);
 
 		this.setState({
 			filterBy: myFilterBy,
+			subFilterBy: mySubFilterBy,
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
 		});
+		this.getSubOptionMeals();
 	};
-	getSubOptionMeals = async (event) => {
-		let changeSubOption = event.target.value;
-		let baseSubOptionMealURL = "";
+	// getNewFunction = async (event) => {
+	// 	console.log("getNewFunction");
+	// };
+	getSubOpMeal = async (event) => {
+		let baseSubMealURL = "https://www.themealdb.com/api/json/v1/1/filter.php?";
 		let mealsURL = "";
-		switch (this.setState.filterBy) {
+		let response = "";
+		console.log("getSubOptionMeals");
+		console.log(this.state.filterBy);
+		console.log(this.state.subFilterBy);
+		console.log(event.target.value);
+		mySubFilterBy = event.target.value;
+		switch (this.state.filterBy) {
 			case "category":
-				mealsURL = baseSubOptionMealURL + `c=${changeSubOption}`;
+				mealsURL = baseSubMealURL + `c=${mySubFilterBy}`;
 				break;
 			case "ingredient":
-				mealsURL = baseSubOptionMealURL + `i=${changeSubOption}`;
+				mealsURL = baseSubMealURL + `i=${mySubFilterBy}`;
 				break;
 			case "region":
-				mealsURL = baseSubOptionMealURL + `r=${changeSubOption}`;
+				mealsURL = baseSubMealURL + `a=${mySubFilterBy}`;
+				break;
+			default:
+				mealsURL = baseSubMealURL + `c=${mySubFilterBy}`;
 				break;
 		}
-		let response = await axios.get(mealsURL);
+		console.log(mealsURL);
+		response = await axios.get(mealsURL);
 		this.setState({
-			categoryMeals: response.data.meals,
+			subFilterBy: mySubFilterBy,
+			subFilterByData: response.data.meals,
 		});
 	};
 
@@ -82,6 +106,7 @@ class App extends Component {
 		subFilterByResponse = await axios.get(subFilterByURL);
 		this.setState({
 			filterBy: myFilterBy,
+			subFilterBy: mySubFilterBy,
 			filterByData: filterByResponse.data.meals,
 			subFilterByData: subFilterByResponse.data.meals,
 		});
@@ -110,6 +135,7 @@ class App extends Component {
 			<div className="App">
 				<div id="pageHeading">
 					<img
+						id="plateImg"
 						alt=""
 						src="https://image.flaticon.com/icons/svg/608/608857.svg"
 					/>
@@ -141,9 +167,9 @@ class App extends Component {
 							render={(routerProps) => (
 								<MealSubOption
 									{...this.state}
-									getsubOptionMeals={this.getSubOptionMeals}
+									getFilterBy={this.getFilterBy}
+									getSubOpMeal={this.getSubOpMeal}
 									getMealDetails={this.getMealDetails}
-									getSearchBy={this.getSearchBy}
 									{...routerProps}
 								/>
 							)}

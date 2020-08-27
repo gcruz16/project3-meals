@@ -10,22 +10,38 @@ function MealSubOption(props) {
 	switch (props.filterBy) {
 		case "category":
 			subOption = props.filterByData.map((category, index) => {
-				return <option key={index + 1}>{category.strCategory}</option>;
+				return (
+					<option key={index + 1} value={category.strCategory}>
+						{category.strCategory}
+					</option>
+				);
 			});
 			break;
 		case "ingredient":
 			subOption = props.filterByData.map((ingredient, index) => {
-				return <option key={index + 1}>{ingredient.strIngredient}</option>;
+				return (
+					<option key={index + 1} value={ingredient.strIngredient}>
+						{ingredient.strIngredient}
+					</option>
+				);
 			});
 			break;
 		case "region":
 			subOption = props.filterByData.map((region, index) => {
-				return <option key={index + 1}>{region.strArea}</option>;
+				return (
+					<option key={index + 1} value={region.strArea}>
+						{region.strArea}
+					</option>
+				);
 			});
 			break;
 		default:
 			subOption = props.filterByData.map((category, index) => {
-				return <option key={index + 1}>{category.strCategory}</option>;
+				return (
+					<option key={index + 1} value={category.strCategory}>
+						{category.strCategory}
+					</option>
+				);
 			});
 			break;
 	}
@@ -52,22 +68,23 @@ function MealSubOption(props) {
 			<div id="categoryHeading">
 				<div id="divSelectCategory">
 					<p id="selectCategory">Select Meal by:</p>
-					<select id="categoryDropdown" onChange={props.getSearchBy}>
+					<select id="categoryDropdown2" onChange={props.getFilterBy}>
 						<option value="category">Category</option>
 						<option value="ingredient">Ingredient</option>
 						<option value="region">Region</option>
 					</select>
 				</div>
 
-				<div id="divCategory">
-					<div id="divSelectCategory">
-						<p id="selectCategory"> Select sub Filter:</p>
-						<select id="categoryDropdown" onChange={props.getSubOptionMeals}>
+				<div id="divSubFilter">
+					<div id="divSubFilter">
+						<p id="selectSubFilter"> Select sub Filter:</p>
+						<select id="categoryDropdown" onChange={props.getSubOpMeal}>
 							{subOption}
 						</select>
 					</div>
 				</div>
 			</div>
+
 			<div id="main">
 				<div id="catMeals">
 					<div id="catMealHeading">{mealsArray}</div>
