@@ -23,11 +23,11 @@ This application displays a database of meals and recipes. It enables users to s
 4. Users need to be able to select a link to view a video from meal detail page.
 
 ## Wireframe
-**Wireframe App**
+### Wireframe App
  <img src="https://github.com/gcruz16/project3-meals/blob/master/public/MealsDB_wireframe.png"  width="400" height="300" align-content="center"/>
-**Flow Chart App**
+### Flow Chart App
  <img src="https://github.com/gcruz16/project3-meals/blob/master/public/MealsDB_FlowChartApp.png"  width="400" height="300" align-content="center"/>
-**Flow Chart Components**
+### Flow Chart Components
 <img src="https://github.com/gcruz16/project3-meals/blob/master/public/FlowChartComponent.png"  width="400" height="300" align-content="center"/>
 
 ## Menu Search Screen
