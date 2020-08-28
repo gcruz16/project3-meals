@@ -25,9 +25,11 @@ This application displays a database of meals and recipes. It enables users to s
 ## Wireframe
 ### Wireframe App
  <img src="https://github.com/gcruz16/project3-meals/blob/master/planning/MealsDB_wireframe.png"  width="400" height="300" align-content="center"/>
-### Flow Chart App
+
+## Flow Chart App
  <img src="https://github.com/gcruz16/project3-meals/blob/master/planning/MealsDB_FlowChartApp.png"  width="400" height="300" align-content="center"/>
-### Flow Chart Components
+
+## Flow Chart Components
 <img src="https://github.com/gcruz16/project3-meals/blob/master/planning/FlowChartComponent.png"  width="400" height="300" align-content="center"/>
 
 ## Menu Search Screen
